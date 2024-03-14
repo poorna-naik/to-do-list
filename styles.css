@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* for element # */
+/* class */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b3cde0, #f1d4e7);    
+    padding: 10px;
+}
+
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background-color: aliceblue;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-do h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* html tag */
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+ol li{
+    list-style:circle;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    display: flex;
+}
+
+ol li::before{
+    list-style:circle;
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ol li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+
+ol li span{
+    flex:1;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ol li span:hover{
+    background: #d1dff6;
+}
+
+.btn {
+    width: 30px; 
+    height: 30px; 
+    background-size: cover;
+    float: right; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.btn.grid-view {
+    background-image: url('../images/4781852_burger_line_list_menu_nav_icon.png');
+}
+
+.btn.list-view {
+    background-image: url('../images/186401_grid_icon.png');
+}
+
+
+.add{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #d1dff6;
+    color:black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 calc(33.33% - 20px);
+    background-image: none;
+    margin: 1%;
+}
+
+ol.list-view {
+    display: none;
+}
+
+ol.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ol.grid-view li {
+    flex: 0 0 calc(33.33% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+}
+

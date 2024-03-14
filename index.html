@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things To Do!</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+</head>
+<body>
+    <div class="container">     
+        <div class="to-do">
+            <button class="btn grid-view" onclick="toggleView()"></button>
+            <h2>To-Do List <img src="images/icon.png" alt="Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Task">
+                <button class="add" onclick="addTask()">Add</button>
+            </div>
+            <ol id="task-list">
+            </ol>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
